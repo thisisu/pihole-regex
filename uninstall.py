@@ -36,8 +36,8 @@ def fetch_url(url):
     return response
 
 
-url_regexps_remote = 'https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list'
-install_comment = 'github.com/mmotti/pihole-regex'
+url_regexps_remote = 'https://raw.githubusercontent.com/thisisu/pihole-regex/master/regex.list'
+install_comment = 'github.com/thisisu/pihole-regex'
 
 cmd_restart = ['pihole', 'restartdns', 'reload']
 
@@ -47,8 +47,8 @@ c = None
 
 regexps_remote = set()
 regexps_local = set()
-regexps_mmotti_local = set()
-regexps_legacy_mmotti = set()
+regexps_thisisu_local = set()
+regexps_legacy_thisisu = set()
 regexps_remove = set()
 
 # Start the docker directory override
@@ -90,7 +90,7 @@ else:
 # Set paths
 path_pihole = docker_mnt_src if docker_mnt_src else r'/etc/pihole'
 path_legacy_regex = os.path.join(path_pihole, 'regex.list')
-path_legacy_mmotti_regex = os.path.join(path_pihole, 'mmotti-regex.list')
+path_legacy_thisisu_regex = os.path.join(path_pihole, 'thisisu-regex.list')
 path_pihole_db = os.path.join(path_pihole, 'gravity.db')
 
 # Check that pi-hole path exists
@@ -138,8 +138,8 @@ if db_exists:
     # Create a cursor object
     c = conn.cursor()
 
-    # Identifying mmotti regexps
-    print("[i] Removing mmotti's regexps")
+    # Identifying thisisu regexps
+    print("[i] Removing thisisu's regexps")
     c.executemany('DELETE FROM domainlist '
                   'WHERE type = 3 '
                   'AND (domain in (?) OR comment = ?)',
@@ -173,17 +173,17 @@ else:
     if regexps_local:
         print(f'[i] {len(regexps_local)} existing regexps identified')
         # If we have a record of the previous legacy install
-        if os.path.isfile(path_legacy_mmotti_regex) and os.path.getsize(path_legacy_mmotti_regex) > 0:
-            print('[i] Existing mmotti-regex install identified')
-            with open(path_legacy_mmotti_regex, 'r') as fOpen:
-                regexps_legacy_mmotti.update(x for x in map(str.strip, fOpen) if x and x[:1] != '#')
+        if os.path.isfile(path_legacy_thisisu_regex) and os.path.getsize(path_legacy_thisisu_regex) > 0:
+            print('[i] Existing thisisu-regex install identified')
+            with open(path_legacy_thisisu_regex, 'r') as fOpen:
+                regexps_legacy_thisisu.update(x for x in map(str.strip, fOpen) if x and x[:1] != '#')
 
-                if regexps_legacy_mmotti:
-                    print(f'[i] Removing regexps found in {path_legacy_mmotti_regex}')
-                    regexps_local.difference_update(regexps_legacy_mmotti)
+                if regexps_legacy_thisisu:
+                    print(f'[i] Removing regexps found in {path_legacy_thisisu_regex}')
+                    regexps_local.difference_update(regexps_legacy_thisisu)
 
-            # Remove mmotti-regex.list as it will no longer be required
-            os.remove(path_legacy_mmotti_regex)
+            # Remove thisisu-regex.list as it will no longer be required
+            os.remove(path_legacy_thisisu_regex)
         else:
             print('[i] Removing regexps that match the remote repo')
             regexps_local.difference_update(regexps_remote)

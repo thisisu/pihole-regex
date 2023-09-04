@@ -52,6 +52,7 @@
 ^rtb[0-9]{1}\.
 ^s\.vii
 ^tracking[_.-]
+^trc\.
 ^tt?rr?(ac)?kk?[_.-]
 ^woof\.
-^xml\.
+^xml[0-9]{1,}?\.
