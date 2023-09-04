@@ -34,8 +34,12 @@
 # Regex filters provided by thisisu
 # https://github.com/thisisu
 
+\.direct[a-z]{3,}fwr\.com$
 \.doubleclick\.net$
-^[a-f]{10}[_.-][a-f]{10}\.com
+\.fsalfrwdr\.com$
+\.highercparev\.com$
+\.nonotro\.name$
+^[a-f]{10}[_.-][a-f]{10}\.com$
 ^[a-z]{4,}-[a-z]{4,}\.pro$
 ^cl(ic)?k[_.-]
 ^creatives?\.
@@ -55,4 +59,6 @@
 ^trc\.
 ^tt?rr?(ac)?kk?[_.-]
 ^woof\.
+^www\.info-[a-z]{4,}\.com$
 ^xml[0-9]{1,}?\.
+info-product\.info$
