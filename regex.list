@@ -34,19 +34,24 @@
 # Regex filters provided by thisisu
 # https://github.com/thisisu
 
--rtb\.checkinform\.net$
--rtb\.factinform\.net$
--rtb\.informcheck\.(?:com|net)$
+\.consumerdirectx\.com$
 \.direct[a-z]{3,}fwr\.com$
 \.doubleclick\.net$
 \.fsalfrwdr\.com$
 \.highercparev\.com$
 \.lifemoodmichelle\.com$
+\.mypoweroffer\.com$
 \.nonotro\.name$
-\.novitrk8\.com
+\.novitrk8\.com$
 \.onesuns\.com$
 \.planmydesk.co$
+\.powerofferz\.com$
+\.prpops\.com$
+\.prwidgets\.com$
 \.rednewly\.com$
+\.soft-com\.biz$
+\.stripcdn\.com$
+\.strpst\.com$
 \.takeyourbackup\.co$
 \.trknovi\.com$
 ^[a-f]{10}[_.-][a-f]{10}\.com$
@@ -73,3 +78,7 @@
 ^www\.info-[a-z]{4,}\.com$
 ^xml[0-9]{1,}?\.
 info-product\.info$
+news[a-z]{6}\.(?:cc|com)$
+rtb\.checkinform\.net$
+rtb\.factinform\.net$
+rtb\.informcheck\.(?:com|net)$
