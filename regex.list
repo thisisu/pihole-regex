@@ -76,7 +76,7 @@
 ^tt?rr?(ac)?kk?[_.-]
 ^woof\.
 ^www\.info-[a-z]{4,}\.com$
-^xml[0-9]{1,}?\.
+^xml([0-9]{1,})?\.
 info-product\.info$
 news[a-z]{6}\.(?:cc|com)$
 rtb\.checkinform\.net$
