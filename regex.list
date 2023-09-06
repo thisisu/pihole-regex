@@ -34,6 +34,9 @@
 # Regex filters provided by thisisu
 # https://github.com/thisisu
 
+-rtb\.checkinform\.net$
+-rtb\.factinform\.net$
+-rtb\.informcheck\.(?:com|net)$
 \.direct[a-z]{3,}fwr\.com$
 \.doubleclick\.net$
 \.fsalfrwdr\.com$
@@ -60,7 +63,8 @@
 ^pop\.
 ^protect\.
 ^r?t\.
-^rtb[0-9]{1}\.
+^r\.
+^rtb?([0-9]{1})?\.
 ^s\.vii
 ^tracking[_.-]
 ^trc\.
