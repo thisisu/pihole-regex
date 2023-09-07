@@ -71,6 +71,7 @@
 ^r\.
 ^rtb?([0-9]{1})?\.
 ^s\.vii
+^s\[a-z]{3}srv\.com$
 ^tracking[_.-]
 ^trc\.
 ^tt?rr?(ac)?kk?[_.-]
