@@ -78,5 +78,5 @@
 ^woof\.
 ^www\.info-[a-z]{4,}\.com$
 ^xml([0-9]{1,})?\.
-info-(?:program|product)\.info$
+info-pro(?:duct|gram)\.(?:icu|info)$
 news-[a-z]{6}\.(?:cc|com)$
