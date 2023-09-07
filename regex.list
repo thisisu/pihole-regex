@@ -41,8 +41,6 @@
 \.highercparev\.com$
 \.lifemoodmichelle\.com$
 \.mypoweroffer\.com$
-\.nonotro\.name$
-\.novitrk8\.com$
 \.onesuns\.com$
 \.planmydesk.co$
 \.powerofferz\.com$
@@ -54,6 +52,7 @@
 \.strpst\.com$
 \.takeyourbackup\.co$
 \.trknovi\.com$
+^[0-9]{5,8}\.novitrk[0-9]{1}\.com$
 ^[a-f]{10}[_.-][a-f]{10}\.com$
 ^[a-z]{4,}-[a-z]{4,}\.pro$
 ^cl(ic)?k[_.-]
@@ -64,6 +63,7 @@
 ^kts\.
 ^live([0-9]{1,3})?\.
 ^opticks\.
+^p[0-9]{5}\.nonotro\.name$
 ^path\.
 ^pop\.
 ^protect\.
