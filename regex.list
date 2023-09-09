@@ -55,6 +55,7 @@
 ^[0-9]{5,8}\.novitrk[0-9]{1}\.com$
 ^[a-f]{10}[_.-][a-f]{10}\.com$
 ^[a-z]{4,}-[a-z]{4,}\.pro$
+^bl\.
 ^cl(ic)?k[_.-]
 ^creatives?\.
 ^delivery?[_.-]
