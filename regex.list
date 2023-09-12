@@ -53,6 +53,7 @@
 \.takeyourbackup\.co$
 \.trknovi\.com$
 ^[0-9]{5,8}\.novitrk[0-9]{1}\.com$
+^[0-9]{5,8}\.takemy(?:desk|order).co$
 ^[a-f]{10}[_.-][a-f]{10}\.com$
 ^[a-z]{4,}-[a-z]{4,}\.pro$
 ^bl\.
@@ -71,11 +72,10 @@
 ^r?t\.
 ^r\.
 ^rtb?([0-9]{1})?\.
-^s\.vii
 ^s\.[a-z]{3}srv\.com$
-^tracking[_.-]
+^s\.vii
 ^trc\.
-^tt?rr?(ac)?kk?[_.-]
+^tt?rr?(ac)?kk?(ing)?[_.-]
 ^woof\.
 ^www\.info-[a-z]{4,}\.com$
 ^xml([0-9]{1,})?\.
