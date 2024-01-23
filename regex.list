@@ -35,6 +35,7 @@
 # https://github.com/thisisu
 
 \.consumerdirectx\.com$
+\.cordclck\.cc$
 \.direct[a-z]{3,}fwr\.com$
 \.doubleclick\.net$
 \.fsalfrwdr\.com$
@@ -52,6 +53,8 @@
 \.strpst\.com$
 \.takeyourbackup\.co$
 \.trknovi\.com$
+^(a|s)\.[a-z]{3,4}srv\.com$
+^(js|trk)\.[a-z]{3,}\.top$
 ^[0-9]{5,8}\.novitrk[0-9]{1}\.com$
 ^[0-9]{5,8}\.takemy(?:desk|order).co$
 ^[a-f]{10}[_.-][a-f]{10}\.com$
@@ -59,6 +62,7 @@
 ^bl\.
 ^cl(ic)?k[_.-]
 ^creatives?\.
+^date\.
 ^delivery?[_.-]
 ^filter\.
 ^go\.
@@ -72,7 +76,6 @@
 ^r?t\.
 ^r\.
 ^rtb?([0-9]{1})?\.
-^s\.[a-z]{3}srv\.com$
 ^s\.vii
 ^trc\.
 ^tt?rr?(ac)?kk?(ing)?[_.-]
