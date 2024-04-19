@@ -59,6 +59,7 @@
 ^[0-9]{5,8}\.takemy(?:desk|order).co$
 ^[a-f]{10}[_.-][a-f]{10}\.com$
 ^[a-z]{4,}-[a-z]{4,}\.pro$
+^11\.
 ^bl\.
 ^cl(ic)?k[_.-]
 ^creatives?\.
