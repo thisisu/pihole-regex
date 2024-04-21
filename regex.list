@@ -55,11 +55,12 @@
 \.trknovi\.com$
 ^(a|s)\.[a-z]{3,4}srv\.com$
 ^(js|trk)\.[a-z]{3,}\.top$
+^11\.
+^[0-9]{3,}\.bet$
 ^[0-9]{5,8}\.novitrk[0-9]{1}\.com$
 ^[0-9]{5,8}\.takemy(?:desk|order).co$
 ^[a-f]{10}[_.-][a-f]{10}\.com$
 ^[a-z]{4,}-[a-z]{4,}\.pro$
-^11\.
 ^bl\.
 ^cl(ic)?k[_.-]
 ^creatives?\.
